@@ -9,10 +9,11 @@ public class VideoType8 extends Video {
     }
 
     private String title;
+    private int randomNum = (int) (Math.random() * 99) + 1;
 
     public String toString() {
 
-        title = "I built " + ((int) Math.random() * 100) + " Wells in " + super.getCountry();
+        title = "I built " + randomNum + " Wells in " + super.getCountry();
         return title;
     }
 }

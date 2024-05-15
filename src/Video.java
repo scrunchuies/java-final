@@ -54,7 +54,7 @@ public class Video {
             "Storage Container",
             "Ziploc Bag" };
 
-    private int randSelector = (int) Math.random() * randNouns.length;
+    private int randSelector = (int) (Math.random() * randNouns.length);
     public String randNoun = randNouns[randSelector];
 
     // constructor
@@ -71,8 +71,9 @@ public class Video {
         String money = "";
         Integer moneyInt = 0;
         String moneyHolder = "";
+
         if (budget == 0) {
-            money = "0";
+            moneyHolder = "0";
 
         } else if (budget == 1) {
             moneyInt = (int) (Math.random() * 9000000) + 2000000;
@@ -90,12 +91,14 @@ public class Video {
         }
         // 56,839,445
         // 56839445
-        for (int i = moneyHolder.length(); i < 0; i--) {
-            money += moneyHolder.substring(i - 1, i);
-            if ((i - 1) % 3 == 0) {
-                money += ",";
+        money = moneyHolder;
+        for (int i = 0; i < moneyHolder.length(); i++) {
+
+            if ((i + 1) % 3 == 0 && (i + 1) != moneyHolder.length() - 1) {
+                money = money.substring(0, i) + "," + money.substring(i, money.length());
             }
         }
+
         return money;
     }
 

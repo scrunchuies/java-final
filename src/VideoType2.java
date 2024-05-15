@@ -12,9 +12,7 @@ public class VideoType2 extends Video {
 
     public String toString() {
 
-        title = "I Spent " + super.timeString() + " in ";
-
-        title += " " + super.getCity() + ", " + super.getCountry();
+        title = "I Spent " + super.timeString() + " in " + super.getCity() + ", " + super.getCountry();
         return title;
     }
 

@@ -12,7 +12,7 @@ public class VideoType7 extends Video {
 
     public String toString() {
 
-        title = "$1 vs $" + super.moneyString() + super.getRandNoun() + "!";
+        title = "$1 vs $" + super.moneyString() + " " + super.getRandNoun() + "!";
         return title;
     }
 }

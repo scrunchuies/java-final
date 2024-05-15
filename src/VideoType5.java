@@ -9,10 +9,11 @@ public class VideoType5 extends Video {
     }
 
     private String title;
+    private int randomNum = (((int) Math.random()) * 20);
 
     public String toString() {
 
-        title = "In " + (((int) Math.random()) * 20) + " Minutes This " + super.getRandNoun() + " Will Explode!";
+        title = "In " + randomNum + " Minutes This " + super.getRandNoun() + " Will Explode!";
         return title;
     }
 }

@@ -243,31 +243,31 @@ public class App {
         }
         String finalOutput;
         if (randomVidNum == 1) {
-            VideoType1 finalVid = new VideoType1(finalCountry, finalCity, moneyAv, timeAv);
+            VideoType1 finalVid = new VideoType1(finalCity, finalCountry, moneyAv, timeAv);
             finalOutput = finalVid.toString();
         } else if (randomVidNum == 2) {
-            VideoType2 finalVid = new VideoType2(finalCountry, finalCity, moneyAv, timeAv);
+            VideoType2 finalVid = new VideoType2(finalCity, finalCountry, moneyAv, timeAv);
             finalOutput = finalVid.toString();
         } else if (randomVidNum == 3) {
-            VideoType3 finalVid = new VideoType3(finalCountry, finalCity, moneyAv, timeAv);
+            VideoType3 finalVid = new VideoType3(finalCity, finalCountry, moneyAv, timeAv);
             finalOutput = finalVid.toString();
         } else if (randomVidNum == 4) {
-            VideoType4 finalVid = new VideoType4(finalCountry, finalCity, moneyAv, timeAv);
+            VideoType4 finalVid = new VideoType4(finalCity, finalCountry, moneyAv, timeAv);
             finalOutput = finalVid.toString();
         } else if (randomVidNum == 5) {
-            VideoType5 finalVid = new VideoType5(finalCountry, finalCity, moneyAv, timeAv);
+            VideoType5 finalVid = new VideoType5(finalCity, finalCountry, moneyAv, timeAv);
             finalOutput = finalVid.toString();
         } else if (randomVidNum == 6) {
-            VideoType6 finalVid = new VideoType6(finalCountry, finalCity, moneyAv, timeAv);
+            VideoType6 finalVid = new VideoType6(finalCity, finalCountry, moneyAv, timeAv);
             finalOutput = finalVid.toString();
         } else if (randomVidNum == 7) {
-            VideoType7 finalVid = new VideoType7(finalCountry, finalCity, moneyAv, timeAv);
+            VideoType7 finalVid = new VideoType7(finalCity, finalCountry, moneyAv, timeAv);
             finalOutput = finalVid.toString();
         } else if (randomVidNum == 8) {
-            VideoType8 finalVid = new VideoType8(finalCountry, finalCity, moneyAv, timeAv);
+            VideoType8 finalVid = new VideoType8(finalCity, finalCountry, moneyAv, timeAv);
             finalOutput = finalVid.toString();
         } else {
-            VideoType9 finalVid = new VideoType9(finalCountry, finalCity, moneyAv, timeAv);
+            VideoType9 finalVid = new VideoType9(finalCity, finalCountry, moneyAv, timeAv);
             finalOutput = finalVid.toString();
         }
         System.out.println(finalOutput);
