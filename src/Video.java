@@ -146,23 +146,23 @@ public class Video {
 
     // setter methods
 
-    private void setCity(String newCity) {
+    public void setCity(String newCity) {
         city = newCity;
     }
 
-    private void setCountry(String newCountry) {
+    public void setCountry(String newCountry) {
         country = newCountry;
     }
 
-    private void setBudget(int newBudget) {
+    public void setBudget(int newBudget) {
         budget = newBudget;
     }
 
-    private void setTimeSpent(int newTimeSpent) {
+    public void setTimeSpent(int newTimeSpent) {
         timeSpent = newTimeSpent;
     }
 
-    private void changeRandNoun() {
+    public void changeRandNoun() {
         randSelector = (int) Math.random() * 180;
         randNoun = randNouns[randSelector];
     }
