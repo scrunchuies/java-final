@@ -87,7 +87,7 @@ public class App {
                             "I guess not everyone is rich. Thats ok pooron. You can be a pooron. Thats ok So do you have at least 100 thousand to spend?"
                                     + ender);
                     String oneHunnidK = scan.nextLine();
-                    if (fiveHunnidK.toUpperCase().equals("Y")) {
+                    if (oneHunnidK.toUpperCase().equals("Y")) {
 
                         System.out.println("Noted...");
                         return 4;
@@ -234,7 +234,7 @@ public class App {
         int moneyAv = budget(scanner);
         int timeAv = timeSpent(scanner);
         int randomVidNum;
-        System.out.println("Processing Information, please wait...");
+        System.out.println("Processing Information, please wait.../n/n");
         if (moneyAv != 0) {
             randomVidNum = (int) (Math.random() * 9) + 1;
 
@@ -270,7 +270,7 @@ public class App {
             VideoType9 finalVid = new VideoType9(finalCity, finalCountry, moneyAv, timeAv);
             finalOutput = finalVid.toString();
         }
-        System.out.println(finalOutput);
+        System.out.println(finalOutput + "\n\n");
 
     }
 }

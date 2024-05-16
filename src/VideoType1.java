@@ -9,14 +9,14 @@ public class VideoType1 extends Video {
     }
 
     private String title;
-
+    private String randomNoun = super.getRandNoun();
     public String toString() {
 
         title = "I Spent " + super.timeString() + " in ";
         String[] vowels = { "a", "e", "i", "o", "u" };
         boolean vowel = false;
         for (int i = 0; i < vowels.length; i++) {
-            if (super.randNoun.substring(0, 1).toUpperCase().equals(vowels[i].toUpperCase())) {
+            if (randomNoun.substring(0, 1).toUpperCase().equals(vowels[i].toUpperCase())) {
                 vowel = true;
                 break;
             }
@@ -28,7 +28,7 @@ public class VideoType1 extends Video {
             title += "a";
         }
 
-        title += " " + super.randNoun;
+        title += " " + randomNoun;
         return title;
     }
 

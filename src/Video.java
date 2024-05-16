@@ -99,7 +99,7 @@ public class Video {
             }
         }
 
-        return money;
+        return moneyHolder;
     }
 
     public String timeString() {
